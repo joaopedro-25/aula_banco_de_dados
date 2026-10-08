@@ -1,0 +1,4 @@
+# Backup lógico diário às 02:00 no fuso horário do servidor.
+# Ajuste /opt/ecommerce e /var/log para os caminhos reais antes de instalar.
+# Instalação: crontab sprint6/crontab.example
+0 2 * * * /usr/bin/env bash /opt/ecommerce/08_backup.sh >> /var/log/ecommerce-backup-cron.log 2>&1
