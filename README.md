@@ -1,34 +1,38 @@
 # Projeto de Banco de Dados - E-commerce
 
-Repositório acadêmico com a evolução do modelo de dados de uma loja online em PostgreSQL.
+Projeto desenvolvido para o Grupo 4, organizado por entregas incrementais de modelagem e implementação.
 
-## Entrega atual: Sprint 5
+## Entrega atual: Sprint 6
 
-A Sprint 5 contém um projeto completo com:
+A Sprint 6 mantém toda a estrutura PostgreSQL da Sprint 5 e adiciona:
 
-- 13 tabelas normalizadas.
-- 15 registros por tabela.
-- PK, FK, NOT NULL, UNIQUE, CHECK e DEFAULT.
-- índices B-tree, parcial e GIN.
-- 13 consultas com JOIN, GROUP BY, HAVING, subconsulta, CTE e janela.
-- transações com BEGIN, COMMIT, SAVEPOINT, ROLLBACK e RETURNING.
-- 2 usuários, 2 roles, GRANT e REVOKE.
-- 3 análises EXPLAIN ANALYZE.
+- backup lógico automatizado com pg_dump em formato customizado;
+- retenção de 30 dias, log, validação e tratamento de erros;
+- agendamento cron diário;
+- procedimento testável de restauração;
+- duas collections MongoDB com Embedding e Referencing;
+- 20 documentos, consultas, índices e explain no MongoDB;
+- comparação técnica entre PostgreSQL e MongoDB.
 
-Documentação completa: [sprint5/README.md](sprint5/README.md)
+Documentação completa: [sprint6/README.md](sprint6/README.md)
 
-## Scripts da Sprint 5
+## Arquivos principais da Sprint 6
 
-1. [01_ddl.sql](sprint5/01_ddl.sql)
-2. [02_inserts.sql](sprint5/02_inserts.sql)
-3. [03_indices.sql](sprint5/03_indices.sql)
-4. [04_consultas.sql](sprint5/04_consultas.sql)
-5. [05_transacoes.sql](sprint5/05_transacoes.sql)
-6. [06_permissoes.sql](sprint5/06_permissoes.sql)
-7. [07_explain.sql](sprint5/07_explain.sql)
+- [01_ddl.sql](sprint6/01_ddl.sql)
+- [02_inserts.sql](sprint6/02_inserts.sql)
+- [03_indices.sql](sprint6/03_indices.sql)
+- [04_consultas.sql](sprint6/04_consultas.sql)
+- [05_transacoes.sql](sprint6/05_transacoes.sql)
+- [06_permissoes.sql](sprint6/06_permissoes.sql)
+- [07_explain.sql](sprint6/07_explain.sql)
+- [08_backup.sh](sprint6/08_backup.sh)
+- [09_mongodb.js](sprint6/09_mongodb.js)
+- [10_validacao_restauracao.sql](sprint6/10_validacao_restauracao.sql)
+- [crontab.example](sprint6/crontab.example)
 
 ## Entregas anteriores
 
 - Sprint 2: diagrama e modelo inicial.
 - Sprint 3: modelo lógico e script SQL.
 - Sprint 4: modelagem física, índices, transações, segurança e EXPLAIN.
+- Sprint 5: projeto PostgreSQL completo com 13 tabelas e dados de teste.
