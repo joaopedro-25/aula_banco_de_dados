@@ -1,0 +1,10 @@
+MULTI
+HSET cart:user:1 product:101 1 product:102 2
+EXPIRE cart:user:1 86400
+EXEC
+HGETALL cart:user:1
+TTL cart:user:1
+HINCRBY cart:user:1 product:102 1
+HGETALL cart:user:1
+DEL cart:user:1
+EXISTS cart:user:1

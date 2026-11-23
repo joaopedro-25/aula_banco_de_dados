@@ -36,3 +36,12 @@ Documentação completa: [sprint6/README.md](sprint6/README.md)
 - Sprint 3: modelo lógico e script SQL.
 - Sprint 4: modelagem física, índices, transações, segurança e EXPLAIN.
 - Sprint 5: projeto PostgreSQL completo com 13 tabelas e dados de teste.
+
+## Novas entregas
+
+- [semana07-08](semana07-08/README.md)
+- [semana09-12](semana09-12/README.md)
+- [semana13](semana13/README.md)
+- [semana14](semana14/README.md)
+- [semana15](semana15/README.md)
+- [semana16](semana16/README.md)
